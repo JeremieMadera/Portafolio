@@ -1,0 +1,57 @@
+
+body
+{
+    font-size: 30px;
+    text-align: center;
+    
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    background-color: rgb(129, 12, 197);
+}
+header nav
+{
+    
+    
+    padding: 50px;
+   display: flex;
+   justify-content: flex-end;
+    gap: 100px;
+
+}
+
+.HeaderT 
+{
+   
+    
+
+    
+    color : rgb(255, 255, 255);
+    text-decoration: solid;
+    font-family: 'Courier New', Courier, monospace;
+    
+    font-size: 18px;
+    
+   
+    
+}
+footer
+{
+    text-align: center;
+    
+    font-size: 20px;
+}
+.sin
+{
+    list-style-type: none;
+}
+.Nombre
+{
+    color: rgb(240, 23, 175);
+}
+h1
+{
+    padding: 350px;
+}
+
+
+
