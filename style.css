@@ -153,6 +153,10 @@ h2
     margin-bottom: 15px;
     justify-content: right;
 }
-
+img
+{
+    width: 60px;
+    height: 60px;
+}
 
 
