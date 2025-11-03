@@ -1,4 +1,7 @@
-
+*
+{
+    box-sizing: border-box;
+}
 body
 {
     background-image:url('img/Space.jpg');
@@ -26,35 +29,92 @@ body
 h1
 {
     text-align: center;
-}
-
-.HeaderT 
-{
-    color : rgb(255, 255, 255);
-    text-decoration: solid;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-}
-.HeaderT:hover
-{
-    color: rgb(240, 23, 175);
-    transition: 0.5s;
+    color:#6b49b6;
+    
+    
     
 }
-footer
+h3
 {
     text-align: center;
+    color:#6b49b6;
+    padding-bottom: 40vh;
     
     
-    font-size: 30px;
+}
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    background-color: rgb(37, 37, 37);
+    position: sticky;
+    top:0;
+}
+
+
+.container-header
+{
+    
+    height: 300px;
+    width: auto;
+}
+
+  
+
+    
+
+nav
+{
+    display: flex;
+    gap:50px;
+    
+    
+    
+    
+}
+nav a
+{
+    text-decoration: none;
+    color:#bbabde;
+    
+}
+a:hover
+{
+    
+    color:#6b49b6;
+    
+    
+}
+
+
+
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    background-color: rgb(37, 37, 37);
+    
+    
+    
 }
 .sin
 {
     list-style-type: none;
 }
+
 .Nombre
 {
-    color: rgb(240, 23, 175);
+    color:#bbabde;
+    padding-bottom: 30px;
+    
+    
 }
 
     
@@ -66,35 +126,14 @@ h2
     
     color: rgb(73, 152, 243);
 }
-header a {
- 
-  display: inline-block; 
-  
-  
-  margin-right: 15px; 
-  
-  
-  padding: 5px 0; 
-  
-}
-
-
-header a:last-child {
-  margin-right: 0;
-}
-.centrara
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
 .containerblock
 {
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 20px;
+    
+    place-items: center;
 
 }
 .car 
