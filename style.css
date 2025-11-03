@@ -1,60 +1,46 @@
 
 
-html
-{
-    height: 100% ;
 
+.container
+{
+    border: 1px solid rgb(255, 255, 255);
+    
+   backdrop-filter: blur(3px);
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: 25px;
+    
+   
+    
 }
+
 
 body
 {
     font-size: 30px;
-    height: 100% ;
+    
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    
-    
-    
-    background-image:url('img/Space.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center ;
     align-items: center;
-    flex-direction: column ;
-    text-align: center;
-    
     font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 255, 255);
-    background-color: rgb(129, 12, 197);
+    background-color: rgb(56, 38, 96, 1);
 }
-
-h1
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-   
-    
-}
-
-
 
 .HeaderT 
 {
-   
     
-
-    margin: 0 70px;
+    
+    
     color : rgb(255, 255, 255);
     text-decoration: solid;
     font-family: 'Courier New', Courier, monospace;
     
-    font-size: 18px;
+    font-size: 25px;
     
    
     
@@ -68,8 +54,9 @@ h1
 footer
 {
     text-align: center;
+    background-color: rgb(56, 38, 96, 1);
     
-    font-size: 20px;
+    font-size: 30px;
 }
 .sin
 {
@@ -88,3 +75,36 @@ h2
     
     color: rgb(73, 152, 243);
 }
+.container2
+{
+    background-color: rgb(56, 38, 96, 1);
+    height: 100vh;
+    display: block;
+    align-content: center;
+    text-align: center;
+    
+}
+main
+{
+  background-image:url('img/Space.jpg');
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;  
+}
+header a {
+ 
+  display: inline-block; 
+  
+  
+  margin-right: 15px; 
+  
+  
+  padding: 5px 0; 
+  
+}
+
+
+header a:last-child {
+  margin-right: 0;
+}
+
