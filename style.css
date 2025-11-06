@@ -2,46 +2,70 @@
 {
     box-sizing: border-box;
 }
+@font-face
+{
+    font-family: Star-wars;
+    src:url(Fonts/SfDistantGalaxyOutline-xoeO.ttf)
+}
 body
 {
-    background-image:url('img/Space.jpg');
-    background-repeat: no-repeat;
-    background-attachment:scroll;
-    background-size: cover;
-    background-position: center top;
-  
     font-size: 30px;
+    font-family: Star-wars;
+    letter-spacing: 5px;
     
     margin: 0;
     padding: 0;
     min-height: 100vh;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(255, 255, 255);
-    background-color: rgb(56, 38, 96, 1);
+    
+                                                
+                
+    color:#ffe919;
+     background-color: rgb(0, 0, 0);
 }
-.container
+.Home-page
 {
-    justify-content: center;
+     background-color: rgb(0, 0, 0);
     align-items: center;
+    
+    height: 100vh;
+}
+.Sobremi-page
+{
+   background-color: rgb(0, 0, 0);
+    height: 100vh;
+    align-items: center;
+}
+.Proyectos-page
+{
+     background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+.Habilidades-page
+{
+    background-color: rgb(255, 255, 255);
+   
+   height: 100vh;
+}
+#Habilidades
+{
+    
+   padding-top:35vh;
+    text-align: center;
+    
+}
+/*cambiar logos*/
+.spanlogos
+{
     text-align: center;
 }
 h1
 {
     text-align: center;
-    color:#6b49b6;
-    
-    
-    
+    color:#ffe919;
+    margin: 0;
 }
-h3
-{
-    text-align: center;
-    color:#6b49b6;
-    padding-bottom: 40vh;
-    
-    
-}
+
 header
 {
     display: flex;
@@ -51,47 +75,22 @@ header
     font-size: 25px;
     background-color: rgb(37, 37, 37);
     position: sticky;
-    top:0;
-}
-
-
-.container-header
-{
     
-    height: 300px;
-    width: auto;
 }
-
-  
-
-    
-
 nav
 {
     display: flex;
     gap:50px;
-    
-    
-    
-    
 }
 nav a
 {
     text-decoration: none;
-    color:#bbabde;
-    
+    color:#ffe919;
 }
 a:hover
 {
-    
-    color:#6b49b6;
-    
-    
+    color: rgb(73, 152, 243);
 }
-
-
-
-
 footer
 {
     display: flex;
@@ -99,10 +98,7 @@ footer
     align-items: center;
     padding: 20px;
     font-size: 25px;
-    background-color: rgb(37, 37, 37);
-    
-    
-    
+    background-color: rgb(37, 37, 37); 
 }
 .sin
 {
@@ -111,52 +107,46 @@ footer
 
 .Nombre
 {
-    color:#bbabde;
+    color:#ffe919;
     padding-bottom: 30px;
-    
-    
+    padding-top: 40vh;
 }
-
-    
-
-
-
 h2
 {
-    
+    margin: 0;
     color: rgb(73, 152, 243);
 }
 .containerblock
 {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
-    
-    place-items: center;
-
+    justify-items: center;
+  
 }
 .car 
 {
-    width: 450px;
-    height: 500px;
+    width: 10vh;
+    height: 10vh;
     border: 1px solid;
-    border-radius: 15px;
-    margin-bottom: 15px;
+    border-radius: 30px;  
+    
 }
-.car2
-{
-    width: 450px;
-    height: 500px;
-    border: 1px solid;
-    border-radius: 15px;
-    margin-bottom: 15px;
-    justify-content: right;
-}
+
 img
 {
-    width: 60px;
-    height: 60px;
+    width: 7vh;
+    height: 7vh;
 }
+p
+{
+    font-size: 40px;
+    text-align: justify;
+    margin: 50px;
+}
+
+
+
 
 
