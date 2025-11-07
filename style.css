@@ -17,7 +17,6 @@ body
     font-size: 30px;
     font-family: Star-wars;
     letter-spacing: 5px;
-    
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -38,28 +37,80 @@ body
 .Sobremi-page
 {
    background-color: rgb(0, 0, 0);
-    height: 100vh;
-    align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+   
+   
+   min-height: 100vh; 
+   
+   align-items: center;
+   justify-content: center; 
+   padding: 20px; 
 }
+.Container-sobremi
+{
+    font-size:35px;
+    text-align: justify;
+    margin:0px 100px 0px 100px;
+    line-height: 1.6;
+    flex-basis: 300px;
+    flex-grow: 1; 
+}
+@media (max-width: 768px) {
+  
+  .Container-sobremi {
+    
+    font-size: 23px; 
+    margin-bottom: 50px;
+  }
+
+  .Sobremi-page {
+     align-items: flex-start;
+  }
+}
+
 .Proyectos-page
 {
      background-color: rgb(0, 0, 0);
-    height: 100vh;
+    min-height: 100vh;
+    display:grid;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+   
+}
+.Proyectos-page div
+{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(251, 255, 23);
+    border-radius: 25px;
+    min-height: 500px;
+    min-width: 700px;
+}
+@media (max-width: 768px)
+{
+    .Proyectos-page div
+    {
+        min-height: 400px;
+        max-width: 100%;
+    }
 }
 .Habilidades-page
 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
    
    height: 100vh;
 }
 #Habilidades
 {
     
-   padding-top:35vh;
+   padding-top:25vh;
     text-align: center;
     
 }
-/*cambiar logos*/
+/*poner creditos a los logos*/
 .spanlogos
 {
     text-align: center;
@@ -123,45 +174,22 @@ h2
 {
     margin: 0;
     color: rgb(73, 152, 243);
+    text-align: center;
 }
-.containerblock
-{
-    display:grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-auto-rows: 37vh;
-    max-width: 1100px;
-    gap: 40px 40px;
-    margin: 0 auto auto;
-    
-  
-   
-  
-}
-.containerblock div
-{
-    background-color: rgb(0, 0, 0);
-  border: 2px solid rgb(251, 255, 23);
-  border-radius: 30px;
-  
-}
+
+
+
 
 img
 {
     width: 7vh;
     height: 7vh;
 }
-p
-{
-    font-size: 40px;
-    text-align: justify;
-    margin: 100px;
-    line-height: 1.7;
-}
+
 .fa-linkedin-in, .fa-github,.fa-envelope
 {
     font-size: 50px;
 }
-
 
 
 
