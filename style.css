@@ -12,6 +12,62 @@
     font-family: Star-wars2;
     src: url(Fonts/Star\ Wars.ttf);
 }
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 35px;
+    font-size: 25px;
+    font-family:star-wars2;
+    background-color: rgb(0, 0, 0);
+     /*background-color: rgb(37, 37, 37);*/
+    position: sticky;
+    top:0px;
+    animation: header-animacion linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 500px;
+    z-index: 1;
+}
+
+@keyframes header-animacion
+{
+    to
+    {
+        background-color: rgb(37, 37, 37);
+        
+        backdrop-filter: blur(5px);
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px)
+{
+   
+}
+
+nav
+{
+    display: flex;
+    gap:25px;
+    
+  
+
+}
+nav a
+{
+    text-decoration: none;
+    color:#ffe919;
+    
+    
+}
+
+.Nombre
+{
+    color:#ffe919;
+    padding-bottom: 30px;
+    padding-top: 40vh;
+}
 body
 {
     font-size: 30px;
@@ -20,10 +76,7 @@ body
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    align-items: center;
-    
-                                                
-                
+    align-items: center;           
     color:#ffe919;
      background-color: rgb(0, 0, 0);
 }
@@ -39,13 +92,11 @@ body
    background-color: rgb(0, 0, 0);
    display: flex;
    flex-wrap: wrap;
-   
-   
    min-height: 100vh; 
-   
    align-items: center;
    justify-content: center; 
    padding: 20px; 
+   
 }
 .Container-sobremi
 {
@@ -55,6 +106,28 @@ body
     line-height: 1.6;
     flex-basis: 300px;
     flex-grow: 1; 
+    animation: mostrar-texto linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 48%;
+}
+p
+{
+    margin: 100px 0px 100px 0px;
+}
+@keyframes mostrar-texto
+{
+    from
+    {
+        opacity: 0;
+        translate: 0 100px;
+        scale: 0.9;
+    }
+    to
+    {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
 }
 @media (max-width: 768px) {
   
@@ -88,13 +161,37 @@ body
     border-radius: 25px;
     min-height: 500px;
     min-width: 700px;
+    animation: mostrar-car linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 48%;
 }
+@keyframes mostrar-car
+{
+    from
+    {
+        opacity: 0;
+        translate: 0 100px;
+        scale: 0.5;
+
+    }
+    to
+    {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
+}
+
+
+
+
+
 @media (max-width: 768px)
 {
     .Proyectos-page div
     {
-        min-height: 400px;
-        max-width: 100%;
+        min-height: 300px;
+        min-width: 400px;
     }
 }
 .Habilidades-page
@@ -122,63 +219,19 @@ h1
     margin: 0;
 }
 
-header
-{
-    display: flex;
-    justify-content: space-around;
-    padding: 35px;
-    font-size: 25px;
-    font-family:star-wars2;
-    background-color: rgb(37, 37, 37);
-    position: sticky;
-    top:0px;
-}
 
-nav
-{
-    display: flex;
-    gap:25px;
-  
-
-}
-nav a
-{
-    text-decoration: none;
-    color:#ffe919;
-    
-    
-}
-a:hover
-{
-    color: rgb(73, 152, 243);
-}
-footer
-{
-    display: flex;
-    justify-content: space-around;
-    padding: 23px;
-    background-color: rgb(37, 37, 37); 
-}
 .sin
 {
     list-style-type: none;
 }
 
-.Nombre
-{
-    color:#ffe919;
-    padding-bottom: 30px;
-    padding-top: 40vh;
-}
+
 h2
 {
     margin: 0;
     color: rgb(73, 152, 243);
     text-align: center;
 }
-
-
-
 
 img
 {
@@ -191,5 +244,11 @@ img
     font-size: 50px;
 }
 
-
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 23px;
+    background-color: rgb(37, 37, 37); 
+}
 
