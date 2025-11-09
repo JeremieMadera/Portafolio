@@ -2,16 +2,7 @@
 {
     box-sizing: border-box;
 }
-@font-face
-{
-    font-family: Star-wars;
-    src:url(Fonts/SfDistantGalaxyOutline-xoeO.ttf)
-    
-}
-@font-face {
-    font-family: Star-wars2;
-    src: url(Fonts/Star\ Wars.ttf);
-}
+
 
 header
 {
@@ -20,7 +11,7 @@ header
     padding: 35px;
     font-size: 25px;
     font-family:star-wars2;
-    background-color: rgb(0, 0, 0);
+    
      /*background-color: rgb(37, 37, 37);*/
     position: sticky;
     top:0px;
@@ -32,11 +23,15 @@ header
 
 @keyframes header-animacion
 {
+    from
+    {
+       background-color: #000000;
+    }
     to
     {
-        background-color: rgb(37, 37, 37);
-        
+        background-color:rgb(255, 255, 255, 0.2);
         backdrop-filter: blur(5px);
+        
         font-size: 20px;
     }
 }
@@ -57,39 +52,57 @@ nav
 nav a
 {
     text-decoration: none;
-    color:#ffe919;
+    color:#ffffff;
     
     
+}
+a:hover
+{
+      color: rgb(0, 119, 255);
 }
 
 .Nombre
 {
-    color:#ffe919;
-    padding-bottom: 30px;
-    padding-top: 40vh;
+    color: rgb(0, 0, 0);
 }
 body
 {
     font-size: 30px;
-    font-family: Star-wars;
+    font-family:monospace;
     letter-spacing: 5px;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     align-items: center;           
-    color:#ffe919;
-     background-color: rgb(0, 0, 0);
+    color:#ffffff;
+      background:linear-gradient(70deg, rgb(58, 133, 80) 0%,rgb(73, 152, 243) 50%, rgb(55, 0, 253)100%);
 }
 .Home-page
 {
-     background-color: rgb(0, 0, 0);
-    align-items: center;
+    display: grid;
+    border: black solid 1px;
+    grid-template-columns: 1fr 1fr;
+    
+    
   
     height: 100vh;
 }
+.container-nombre
+{
+    align-content:center;
+    padding-bottom: 100px;
+    
+   
+}
+.container-dev
+{
+    align-content: center;
+    padding-top: 100px;
+   
+}
 .Sobremi-page
 {
-   background-color: rgb(0, 0, 0);
+   
    display: flex;
    flex-wrap: wrap;
    min-height: 100vh; 
@@ -108,7 +121,7 @@ body
     flex-grow: 1; 
     animation: mostrar-texto linear both;
     animation-timeline: view();
-    animation-range: entry 30% cover 48%;
+    animation-range: entry 30% cover 30%;
 }
 p
 {
@@ -144,7 +157,7 @@ p
 
 .Proyectos-page
 {
-     background-color: rgb(0, 0, 0);
+    
     min-height: 100vh;
     display:grid;
     gap: 50px;
@@ -156,8 +169,8 @@ p
 }
 .Proyectos-page div
 {
-    background-color: rgb(0, 0, 0);
-    border: 2px solid rgb(251, 255, 23);
+    
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 25px;
     min-height: 500px;
     min-width: 700px;
@@ -196,7 +209,7 @@ p
 }
 .Habilidades-page
 {
-    background-color: rgb(0, 0, 0);
+    
    
    height: 100vh;
 }
@@ -215,12 +228,8 @@ p
 h1
 {
     text-align: center;
-    color:#ffe919;
+    color:rgb(0, 0, 0);
     margin: 0;
-}
-h2
-{
-    text-align: center;
 }
 
 
@@ -233,7 +242,7 @@ h2
 h2
 {
     margin: 0;
-    color: rgb(73, 152, 243);
+    color: rgb(255, 224, 120);
     text-align: center;
 }
 
