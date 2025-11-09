@@ -58,12 +58,12 @@ nav a
 }
 a:hover
 {
-      color: rgb(0, 119, 255);
+      color:rgb(247, 194, 114);
 }
 
 .Nombre
 {
-    color: rgb(0, 0, 0);
+     color:rgb(255, 157, 10);
 }
 body
 {
@@ -122,6 +122,8 @@ body
     animation: mostrar-texto linear both;
     animation-timeline: view();
     animation-range: entry 30% cover 30%;
+    
+    border-radius: 25px;
 }
 p
 {
@@ -228,7 +230,7 @@ p
 h1
 {
     text-align: center;
-    color:rgb(0, 0, 0);
+    color:rgb(247, 194, 114);
     margin: 0;
 }
 
@@ -242,7 +244,7 @@ h1
 h2
 {
     margin: 0;
-    color: rgb(255, 224, 120);
+      color:rgb(255, 157, 10);
     text-align: center;
 }
 
