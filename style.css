@@ -10,7 +10,6 @@ header
     justify-content: space-around;
     padding: 35px;
     font-size: 25px;
-    font-family:star-wars2;
     
      /*background-color: rgb(37, 37, 37);*/
     position: sticky;
@@ -25,7 +24,7 @@ header
 {
     from
     {
-       background-color: #000000;
+       background-color: rgb(37, 37, 37);
     }
     to
     {
@@ -36,15 +35,35 @@ header
     }
 }
 
-@media (max-width: 768px)
-{
-   
-}
 
+.logos-arriba
+{
+    
+    text-decoration: none; 
+    color: #f0f0f0; 
+    font-size: 20px;
+    padding: 8px 15px;
+    background-color: rgb(24, 54, 80);
+    border-radius: 50px; 
+    display: flex;
+    align-items: center;
+}
+.logos-arriba i {
+    margin-right: 8px; 
+    font-size: 1.1rem;
+}
+.logos-arriba:hover {
+    
+    background-color: #ffc107; 
+    color: rgb(27, 59, 95); 
+    border-color: #ffc107;
+    box-shadow: 0 4px 10px rgba(255, 193, 7, 0.4); 
+}
 nav
 {
     display: flex;
     gap:25px;
+    justify-content: center;
     
   
 
@@ -58,57 +77,73 @@ nav a
 }
 a:hover
 {
-      color:rgb(247, 194, 114);
+      color: #ffc107;
 }
 
 .Nombre
 {
-     color:rgb(255, 157, 10);
+     font-size: 50px; 
+    font-weight: 700; 
+    color: #ffc107; 
+    margin: 5px 0 20px 0;
+    line-height: 1.1;
 }
 body
 {
     font-size: 30px;
-    font-family:monospace;
+    font-family:arial,sans-serif;
     letter-spacing: 5px;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     align-items: center;           
     color:#ffffff;
-      background:linear-gradient(70deg, rgb(58, 133, 80) 0%,rgb(73, 152, 243) 50%, rgb(55, 0, 253)100%);
+      background-color: rgb(27, 59, 95) ;
 }
+      
 .Home-page
 {
-    display: grid;
-    border: black solid 1px;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
     
-    
-  
+    text-align: center;
     height: 100vh;
-}
-.container-nombre
-{
-    align-content:center;
-    padding-bottom: 100px;
+    padding: 20px;
+    align-items: center;
     
-   
+    
 }
-.container-dev
-{
-    align-content: center;
-    padding-top: 100px;
-   
+.Home-page h1 {
+    margin: 10px 0; 
+    font-weight: 300; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
 }
+.Home-page h1:first-child {
+    font-size: 30px; 
+    color: #a0c4ff; 
+}
+.Home-page h1:last-of-type {
+    font-size: 30px;
+    font-weight: 500;
+    color: #e0e0e0; 
+}
+     
+
+
+
+
+
 .Sobremi-page
 {
    
-   display: flex;
-   flex-wrap: wrap;
-   min-height: 100vh; 
-   align-items: center;
-   justify-content: center; 
-   padding: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh; 
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
    
 }
 .Container-sobremi
@@ -172,7 +207,7 @@ p
 .Proyectos-page div
 {
     
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 25px;
     min-height: 500px;
     min-width: 700px;
@@ -196,11 +231,6 @@ p
         scale: 1;
     }
 }
-
-
-
-
-
 @media (max-width: 768px)
 {
     .Proyectos-page div
@@ -227,12 +257,7 @@ p
 {
     text-align: center;
 }
-h1
-{
-    text-align: center;
-    color:rgb(247, 194, 114);
-    margin: 0;
-}
+
 
 
 .sin
@@ -244,7 +269,7 @@ h1
 h2
 {
     margin: 0;
-      color:rgb(255, 157, 10);
+      color: #ffc107;
     text-align: center;
 }
 
@@ -254,15 +279,17 @@ img
     height: 7vh;
 }
 
-.fa-linkedin-in, .fa-github,.fa-envelope
+ .fa-linkedin-in, .fa-github,.fa-envelope
 {
     font-size: 50px;
+    
 }
 
 footer
 {
     display: flex;
     justify-content: space-around;
+    font-size: 50px;
     padding: 23px;
     background-color: rgb(37, 37, 37); 
 }
