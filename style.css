@@ -10,8 +10,6 @@ header
     justify-content: space-around;
     padding: 35px;
     font-size: 25px;
-    
-     /*background-color: rgb(37, 37, 37);*/
     position: sticky;
     top:0px;
     animation: header-animacion linear both;
@@ -19,7 +17,7 @@ header
     animation-range: 0 500px;
     z-index: 1;
 }
-
+/*animacion del header*/
 @keyframes header-animacion
 {
     from
@@ -35,7 +33,7 @@ header
     }
 }
 
-
+/*logos de contacto de la parte de arriba*/
 .logos-arriba
 {
     
@@ -95,6 +93,7 @@ body
     letter-spacing: 5px;
     margin: 0;
     padding: 0;
+    font-weight: 500;
     min-height: 100vh;
     align-items: center;           
     color:#ffffff;
@@ -129,22 +128,14 @@ body
     font-weight: 500;
     color: #e0e0e0; 
 }
-     
-
-
-
-
-
 .Sobremi-page
 {
-   
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh; 
     align-items: center;
     justify-content: center; 
     padding: 20px;
-   
 }
 .Container-sobremi
 {
@@ -157,7 +148,6 @@ body
     animation: mostrar-texto linear both;
     animation-timeline: view();
     animation-range: entry 30% cover 30%;
-    
     border-radius: 25px;
 }
 p
@@ -186,27 +176,21 @@ p
     font-size: 23px; 
     margin-bottom: 50px;
   }
-
   .Sobremi-page {
      align-items: flex-start;
   }
 }
-
 .Proyectos-page
 {
-    
     min-height: 100vh;
     display:grid;
     gap: 50px;
     justify-content: center;
     align-items: center;
     padding: 20px;
-
-   
 }
 .Proyectos-page div
 {
-    
     border: 2px solid rgb(255, 255, 255);
     border-radius: 25px;
     min-height: 500px;
@@ -215,6 +199,77 @@ p
     animation-timeline: view();
     animation-range: entry 30% cover 48%;
 }
+
+.Proyectos-page div:nth-child(2)
+{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.Proyectos-page div:nth-child(3)
+{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  
+}
+.Proyectos-page div:nth-child(4)
+{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+.Proyectos-page div:nth-child(5)
+{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+   
+}
+/*animacion que muestra la informacion del car*/
+.info-car
+{
+   
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    transform: translateY(100%)
+    translateY(-88px)
+    translateZ(0);
+    transition: transform 0.5s ease-out;
+    color: black;
+  
+}
+.info-car:before
+{
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+     filter: blur(10px);
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%)
+    translateY(88px)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+.Proyectos-page div:hover .info-car
+{
+    transform: translateY(0)
+      translateZ(0);
+}
+/*animacion que muestra el car*/
 @keyframes mostrar-car
 {
     from
@@ -222,7 +277,6 @@ p
         opacity: 0;
         translate: 0 100px;
         scale: 0.5;
-
     }
     to
     {
@@ -231,6 +285,7 @@ p
         scale: 1;
     }
 }
+/*ajuste para pantallas pequeñas*/
 @media (max-width: 768px)
 {
     .Proyectos-page div
@@ -241,50 +296,37 @@ p
 }
 .Habilidades-page
 {
-    
-   
    height: 100vh;
 }
 #Habilidades
 {
-    
    padding-top:25vh;
     text-align: center;
-    
 }
 /*poner creditos a los logos*/
 .spanlogos
 {
     text-align: center;
 }
-
-
-
 .sin
 {
     list-style-type: none;
 }
-
-
 h2
 {
     margin: 0;
       color: #ffc107;
     text-align: center;
 }
-
 img
 {
     width: 7vh;
     height: 7vh;
 }
-
  .fa-linkedin-in, .fa-github,.fa-envelope
 {
     font-size: 50px;
-    
 }
-
 footer
 {
     display: flex;
