@@ -39,7 +39,7 @@ header
     
     text-decoration: none; 
     color: #f0f0f0; 
-    font-size: 20px;
+    font-size: 15px;
     padding: 8px 15px;
     background-color: rgb(24, 54, 80);
     border-radius: 50px; 
@@ -47,8 +47,8 @@ header
     align-items: center;
 }
 .logos-arriba i {
-    margin-right: 8px; 
-    font-size: 1.1rem;
+   
+    font-size: 15px;
 }
 .logos-arriba:hover {
     
@@ -62,6 +62,7 @@ nav
     display: flex;
     gap:25px;
     justify-content: center;
+    flex-wrap: wrap;
     
   
 
@@ -70,6 +71,7 @@ nav a
 {
     text-decoration: none;
     color:#ffffff;
+   
     
     
 }
@@ -78,9 +80,9 @@ a:hover
       color: #ffc107;
 }
 
-.Nombre
+h1
 {
-     font-size: 50px; 
+    font-size: 50px; 
     font-weight: 700; 
     color: #ffc107; 
     margin: 5px 0 20px 0;
@@ -88,7 +90,7 @@ a:hover
 }
 body
 {
-    font-size: 30px;
+    font-size: 18px;
     font-family:arial,sans-serif;
     letter-spacing: 5px;
     margin: 0;
@@ -131,6 +133,7 @@ body
 .Sobremi-page
 {
     display: flex;
+    font-weight: 500;
     flex-wrap: wrap;
     min-height: 100vh; 
     align-items: center;
@@ -139,8 +142,8 @@ body
 }
 .Container-sobremi
 {
-    font-size:35px;
-    text-align: justify;
+    font-size:30px;
+    text-align: center;
     margin:0px 100px 0px 100px;
     line-height: 1.6;
     flex-basis: 300px;
@@ -154,21 +157,7 @@ p
 {
     margin: 100px 0px 100px 0px;
 }
-@keyframes mostrar-texto
-{
-    from
-    {
-        opacity: 0;
-        translate: 0 100px;
-        scale: 0.9;
-    }
-    to
-    {
-        opacity: 1;
-        translate: 0 0;
-        scale: 1;
-    }
-}
+
 @media (max-width: 768px) {
   
   .Container-sobremi {
@@ -303,7 +292,7 @@ p
    padding-top:25vh;
     text-align: center;
 }
-/*poner creditos a los logos*/
+
 .spanlogos
 {
     text-align: center;
@@ -315,8 +304,10 @@ p
 h2
 {
     margin: 0;
-      color: #ffc107;
+    color: #ffc107;
     text-align: center;
+    line-height: 1.1;
+    font-weight: 700;
 }
 img
 {
