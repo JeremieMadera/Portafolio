@@ -17,6 +17,15 @@ header
     animation-range: 0 500px;
     z-index: 1;
 }
+
+@media (max-width: 768px)
+{
+    nav{
+        gap: 15px;
+       
+
+    }
+}
 /*animacion del header*/
 @keyframes header-animacion
 {
@@ -45,6 +54,14 @@ header
     border-radius: 50px; 
     display: flex;
     align-items: center;
+}
+@media (max-width: 768px)
+{
+        .logos-arriba
+        {
+            font-size: 12px;
+            padding: 6px 12px;
+        }
 }
 .logos-arriba i {
    
@@ -280,7 +297,7 @@ p
     .Proyectos-page div
     {
         min-height: 300px;
-        min-width: 400px;
+        min-width: 350px;
     }
 }
 .Habilidades-page
