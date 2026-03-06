@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 25px 40px;
+    font-size: 18px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    transition: all 0.3s ease;
+    will-change: background-color, box-shadow;
+}
+
+.headerScrolled {
+    background-color: rgba(26, 26, 46, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+    padding: 8px 0;
+    letter-spacing: 0.5px;
+}
+
+.nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::before {
+    width: 100%;
+}
+
+.nav a:hover {
+    color: #00d4ff;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+    
+    .nav {
+        gap: 20px;
+        font-size: 16px;
+    }
+}
