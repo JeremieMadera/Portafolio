@@ -1,129 +1,156 @@
-.proyectosPage {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 20px;
+.divider {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 1px;
+  background: var(--color-border);
 }
 
-.proyectosPage h2 {
-    margin: 0 0 60px 0;
-    color: #00d4ff;
-    text-align: center;
-    line-height: 1.2;
-    font-weight: 700;
-    font-size: 2.5rem;
+.section {
+  padding: 7rem 1.5rem;
 }
 
-.projectsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
-    max-width: 1400px;
-    width: 100%;
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
 }
 
-.projectCard {
-    border: 1px solid rgba(0, 212, 255, 0.2);
-    border-radius: 20px;
-    min-height: 400px;
-    background: rgba(255, 255, 255, 0.03);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    position: relative;
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
-.projectCard::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(123, 44, 191, 0.1) 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  letter-spacing: -0.025em;
+  color: var(--color-text);
+  margin-bottom: 3rem;
 }
 
-.projectCard:hover {
-    transform: translateY(-10px);
-    border-color: rgba(0, 212, 255, 0.5);
-    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
 }
 
-.projectCard:hover::before {
-    opacity: 1;
+/* Live card */
+.card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 240px;
+  transition: border-color 0.2s, transform 0.2s;
+  cursor: default;
 }
 
-.infoCar {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: 400px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    z-index: 1;
+.cardHovered {
+  border-color: rgba(0, 212, 170, 0.27);
+  transform: translateY(-4px);
 }
 
-.infoCar h3 {
-    color: #00d4ff;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    font-weight: 600;
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.infoCar ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+.badgeLive {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-accent);
+  background: rgba(0, 212, 170, 0.07);
+  border: 1px solid rgba(0, 212, 170, 0.13);
+  border-radius: 2rem;
+  padding: 0.2rem 0.75rem;
+  letter-spacing: 0.06em;
 }
 
-.infoCar li {
-    background: rgba(0, 212, 255, 0.1);
-    border: 1px solid rgba(0, 212, 255, 0.3);
-    padding: 8px 20px;
-    border-radius: 20px;
-    color: #00d4ff;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
+.externalLink {
+  color: var(--color-text-subtle);
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-.infoCar li:hover {
-    background: rgba(0, 212, 255, 0.2);
-    transform: scale(1.05);
+.externalLink:hover {
+  color: var(--color-accent);
 }
 
-@media (max-width: 768px) {
-    .projectsGrid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .projectCard {
-        min-height: 350px;
-    }
-    
-    .infoCar {
-        padding: 30px 20px;
-        min-height: 350px;
-    }
-    
-    .proyectosPage {
-        padding: 60px 20px;
-    }
-    
-    .proyectosPage h2 {
-        font-size: 2rem;
-        margin-bottom: 40px;
-    }
+.cardTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1875rem;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.cardDesc {
+  font-size: 0.875rem;
+  color: var(--color-text-subtle);
+  line-height: 1.7;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-text-muted);
+  background: var(--color-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.2rem 0.625rem;
+  letter-spacing: 0.04em;
+}
+
+/* Soon card */
+.cardSoon {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.badgeSoon {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+  background: rgba(0, 212, 170, 0.07);
+  border: 1px solid rgba(0, 212, 170, 0.13);
+  border-radius: 2rem;
+  padding: 0.25rem 0.875rem;
+}
+
+.soonText {
+  font-size: 0.875rem;
+  color: var(--color-text-subtle);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

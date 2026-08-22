@@ -1,0 +1,33 @@
+/* =============================================
+   TEMA GLOBAL — edita aquí para cambiar el diseño
+   ============================================= */
+
+:root {
+  /* Colores */
+  --color-bg:              #080c10;
+  --color-card:            #0e1520;
+  --color-secondary:       #111827;
+  --color-accent:          #00d4aa;
+  --color-accent-hover:    #00bfa0;
+  --color-text:            #e8edf2;
+  --color-text-card:       #c8d4e0;
+  --color-text-muted:      #9cafc0;
+  --color-text-subtle:     #6b7f90;
+
+  /* Bordes */
+  --color-border:          #1a2738;
+  --color-border-accent:   rgba(0, 212, 170, 0.27);
+
+  /* Tipografías */
+  --font-display:          'Outfit', sans-serif;
+  --font-body:             'Inter', sans-serif;
+  --font-mono:             'JetBrains Mono', monospace;
+
+  /* Radio */
+  --radius-sm:             0.375rem;
+  --radius:                0.75rem;
+  --radius-lg:             1rem;
+
+  /* Transición */
+  --transition:            all 0.2s ease;
+}

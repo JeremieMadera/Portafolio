@@ -1,102 +1,102 @@
-.habilidadesPage {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 20px;
+.divider {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 1px;
+  background: var(--color-border);
 }
 
-.habilidadesPage h2 {
-    margin: 0 0 80px 0;
-    color: #00d4ff;
-    text-align: center;
-    line-height: 1.2;
-    font-weight: 700;
-    font-size: 2.5rem;
+.section {
+  padding: 7rem 1.5rem;
 }
 
-.spanLogos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-    max-width: 1200px;
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
 }
 
-.skillsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 40px;
-    width: 100%;
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
-.foto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(0, 212, 255, 0.2);
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+.heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  letter-spacing: -0.025em;
+  color: var(--color-text);
+  margin-bottom: 3rem;
 }
 
-.foto:hover {
-    transform: translateY(-10px) scale(1.05);
-    background: rgba(0, 212, 255, 0.05);
-    border-color: rgba(0, 212, 255, 0.5);
-    box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
-.skillIcon {
-    width: 80px;
-    height: 80px;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-    transition: transform 0.3s ease;
+.card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.875rem;
+  cursor: default;
+  transition: border-color 0.25s, transform 0.25s, background 0.25s, box-shadow 0.25s;
 }
 
-.foto:hover .skillIcon {
-    transform: scale(1.15) rotate(5deg);
+.cardHovered {
+  background: var(--color-secondary);
+  transform: translateY(-6px) scale(1.03);
 }
 
-.skillName {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #e0e0e0;
-    text-align: center;
-    letter-spacing: 0.5px;
+.icon {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  image-rendering: crisp-edges;
 }
 
-@media (max-width: 768px) {
-    .habilidadesPage {
-        padding: 60px 20px;
-    }
-    
-    .habilidadesPage h2 {
-        font-size: 2rem;
-        margin-bottom: 50px;
-    }
-    
-    .skillsGrid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 25px;
-    }
-    
-    .foto {
-        padding: 20px;
-        gap: 10px;
-    }
-    
-    .skillIcon {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .skillName {
-        font-size: 0.85rem;
-    }
+.iconHovered {
+  transform: rotate(-8deg) scale(1.15);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.name {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-card);
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.nameHovered {
+  color: var(--color-text);
+}
+
+.category {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-text-subtle);
+  text-align: center;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
