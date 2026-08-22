@@ -1,29 +1,39 @@
-import { memo, useMemo } from 'react';
+import { useState, memo } from 'react';
 import styles from './Habilidades.module.css';
-import { FaJava, FaHtml5, FaCss3Alt, FaJs, FaDatabase } from 'react-icons/fa';
-import { SiDotnet } from 'react-icons/si';
-import { TbBrandCSharp } from 'react-icons/tb';
 
-const skills = [
-  { name: 'C#', icon: TbBrandCSharp, alt: 'logo de c#', color: '#239120' },
-  { name: '.NET', icon: SiDotnet, alt: 'logo de .net', color: '#512BD4' },
-  { name: 'Java', icon: FaJava, alt: 'logo de java', color: '#007396' },
-  { name: 'SQL', icon: FaDatabase, alt: 'logo de sql', color: '#4479A1' },
-  { name: 'HTML', icon: FaHtml5, alt: 'logo de html', color: '#E34F26' },
-  { name: 'CSS', icon: FaCss3Alt, alt: 'logo de css', color: '#1572B6' },
-  { name: 'JavaScript', icon: FaJs, alt: 'logo de javascript', color: '#F7DF1E' }
+const SKILLS = [
+  { name: 'C#',         img: 'https://img.icons8.com/color/96/c-sharp-logo.png',        color: '#9b59b6', category: 'Backend' },
+  { name: '.NET',       img: 'https://img.icons8.com/color/96/net-framework.png',        color: '#512bd4', category: 'Backend' },
+  { name: 'Java',       img: 'https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png', color: '#e76f00', category: 'Backend' },
+  { name: 'SQL',        img: 'https://img.icons8.com/color/96/sql.png',                  color: '#336791', category: 'Backend' },
+  { name: 'HTML',       img: 'https://img.icons8.com/color/96/html-5--v1.png',           color: '#e34f26', category: 'Frontend' },
+  { name: 'CSS',        img: 'https://img.icons8.com/color/96/css3.png',                 color: '#264de4', category: 'Frontend' },
+  { name: 'JavaScript', img: 'https://img.icons8.com/color/96/javascript--v1.png',       color: '#f7df1e', category: 'Frontend' },
+  { name: 'React',      img: 'https://img.icons8.com/color/96/react-native.png',         color: '#61dafb', category: 'Frontend' },
 ];
 
 const SkillCard = memo(({ skill }) => {
-  const IconComponent = skill.icon;
+  const [hovered, setHovered] = useState(false);
+
   return (
-    <div className={styles.foto}>
-      <IconComponent 
-        className={styles.skillIcon} 
-        aria-label={skill.alt}
-        style={{ color: skill.color }}
+    <div
+      className={`${styles.card} ${hovered ? styles.cardHovered : ''}`}
+      style={hovered ? { borderColor: skill.color + '55', boxShadow: `0 12px 32px ${skill.color}18` } : {}}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <img
+        src={skill.img}
+        alt={skill.name}
+        width={52}
+        height={52}
+        className={`${styles.icon} ${hovered ? styles.iconHovered : ''}`}
+        style={hovered ? { filter: `drop-shadow(0 4px 12px ${skill.color}66)` } : {}}
       />
-      <span className={styles.skillName}>{skill.name}</span>
+      <div className={styles.info}>
+        <span className={`${styles.name} ${hovered ? styles.nameHovered : ''}`}>{skill.name}</span>
+        <span className={styles.category} style={hovered ? { color: skill.color } : {}}>{skill.category}</span>
+      </div>
     </div>
   );
 });
@@ -32,16 +42,20 @@ SkillCard.displayName = 'SkillCard';
 
 function Habilidades() {
   return (
-    <section className={styles.habilidadesPage}>
-      <div className={styles.spanLogos}>
-        <h2 id="Habilidades">Habilidades</h2>
-        <div className={styles.skillsGrid}>
-          {skills.map((skill) => (
-            <SkillCard key={skill.name} skill={skill} />
-          ))}
+    <>
+      <div className={styles.divider} />
+      <section id="habilidades" className={styles.section}>
+        <div className={styles.container}>
+          <p className={styles.label}>03 — Habilidades</p>
+          <h2 className={styles.heading}>Stack tecnológico</h2>
+          <div className={styles.grid}>
+            {SKILLS.map((skill) => (
+              <SkillCard key={skill.name} skill={skill} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
