@@ -112,7 +112,13 @@
   padding: 0;
 }
 
+@media (max-width: 480px) {
+  .links { gap: 0.75rem; }
+  .link { font-size: 0.65rem; }
+}
+
 @media (min-width: 768px) {
+  .links { display: flex; }
   .ctaBtn { display: block; }
   .hamburger { display: none; }
   .mobileMenu { display: none; }
