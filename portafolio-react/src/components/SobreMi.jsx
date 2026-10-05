@@ -16,12 +16,12 @@ function SobreMi() {
         <div className={styles.grid}>
           <div className={styles.text}>
             <h2 className={styles.heading}>
-              Apasionado por construir software que importa
+              Desarrollador Back-End con experiencia Full-Stack
             </h2>
             <div className={styles.paragraphs}>
-              <p>Estudié un grado asociado en ciencias de programación en la Caribbean University, y actualmente curso un bachillerato en ciencias de computación en la Inter.</p>
-              <p>Tengo 21 años y vivo en Puerto Rico. Me especializo en desarrollo back-end trabajando con tecnologías como C#, .NET, Java y SQL, siempre buscando aprender nuevas herramientas para mejorar mis habilidades.</p>
-              <p>Desde pequeño quise programar. Mi objetivo es seguir creciendo profesionalmente y contribuir a proyectos que generen impacto real.</p>
+              <p>Soy un desarrollador radicado en Puerto Rico, enfocado en el desarrollo Back-End y la arquitectura de bases de datos.</p>
+              <p>Trabajo con el ecosistema de C# y .NET, pero también tengo experiencia desarrollando plataformas web completas utilizando TypeScript, React, Node.js, Express y PostgreSQL, incluyendo integraciones como pasarelas de pago (Stripe).</p>
+              <p>Actualmente curso mi bachillerato en Ciencias de Computación en la Inter, tras completar un grado asociado en la Caribbean University. Mi meta es seguir resolviendo retos técnicos y aportar valor en proyectos que requieran soluciones eficientes y escalables.</p>
             </div>
           </div>
 

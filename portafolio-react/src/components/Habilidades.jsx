@@ -2,14 +2,17 @@ import { useState, memo } from 'react';
 import styles from './Habilidades.module.css';
 
 const SKILLS = [
-  { name: 'C#',         img: 'https://img.icons8.com/color/96/c-sharp-logo.png',        color: '#9b59b6', category: 'Backend' },
+  { name: 'C#',         img: 'https://img.icons8.com/color/96/c-sharp-logo.png',         color: '#9b59b6', category: 'Backend' },
   { name: '.NET',       img: 'https://img.icons8.com/color/96/net-framework.png',        color: '#512bd4', category: 'Backend' },
-  { name: 'Java',       img: 'https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png', color: '#e76f00', category: 'Backend' },
+  { name: 'Node.js',    img: 'https://img.icons8.com/color/96/nodejs.png',               color: '#339933', category: 'Backend' },
+  { name: 'Express',    img: 'https://img.icons8.com/fluency/96/express-js.png',         color: '#808080', category: 'Backend' },
+  { name: 'PostgreSQL', img: 'https://img.icons8.com/color/96/postgreesql.png',          color: '#336791', category: 'Backend' },
   { name: 'SQL',        img: 'https://img.icons8.com/color/96/sql.png',                  color: '#336791', category: 'Backend' },
+  { name: 'TypeScript', img: 'https://img.icons8.com/color/96/typescript.png',           color: '#3178c6', category: 'Frontend' },
+  { name: 'React',      img: 'https://img.icons8.com/color/96/react-native.png',         color: '#61dafb', category: 'Frontend' },
+  { name: 'JavaScript', img: 'https://img.icons8.com/color/96/javascript--v1.png',       color: '#f7df1e', category: 'Frontend' },
   { name: 'HTML',       img: 'https://img.icons8.com/color/96/html-5--v1.png',           color: '#e34f26', category: 'Frontend' },
   { name: 'CSS',        img: 'https://img.icons8.com/color/96/css3.png',                 color: '#264de4', category: 'Frontend' },
-  { name: 'JavaScript', img: 'https://img.icons8.com/color/96/javascript--v1.png',       color: '#f7df1e', category: 'Frontend' },
-  { name: 'React',      img: 'https://img.icons8.com/color/96/react-native.png',         color: '#61dafb', category: 'Frontend' },
 ];
 
 const SkillCard = memo(({ skill }) => {

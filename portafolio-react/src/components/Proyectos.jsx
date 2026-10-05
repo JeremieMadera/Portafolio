@@ -3,18 +3,18 @@ import styles from './Proyectos.module.css';
 
 const PROJECTS = [
   {
-    title: 'Portafolio Web',
-    description: 'Sitio web personal para mostrar mis proyectos, habilidades y experiencia como desarrollador back-end.',
-    tags: ['HTML', 'CSS', 'JavaScript', 'React'],
+    title: 'Plataforma Web Full-Stack',
+    description: 'Aplicación web con pasarela de pagos segura, gestión de base de datos relacional y arquitectura escalable.',
+    tags: ['TypeScript', 'React', 'Node.js', 'Express', 'PostgreSQL', 'Stripe'],
     link: '#',
     status: 'live',
   },
   {
-    title: 'Próximamente',
-    description: 'Proyecto en desarrollo. Nuevas funcionalidades y tecnologías en camino.',
-    tags: [],
-    link: null,
-    status: 'soon',
+    title: 'Portafolio Web',
+    description: 'Sitio web personal para mostrar mis proyectos, habilidades y experiencia.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'React'],
+    link: '#',
+    status: 'live',
   },
   {
     title: 'Próximamente',
