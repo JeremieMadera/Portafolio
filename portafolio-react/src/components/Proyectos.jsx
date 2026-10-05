@@ -7,6 +7,7 @@ const PROJECTS = [
     description: 'Aplicación web con pasarela de pagos segura, gestión de base de datos relacional y arquitectura escalable.',
     tags: ['TypeScript', 'React', 'Node.js', 'Express', 'PostgreSQL', 'Stripe'],
     link: 'https://tienda-online-ashen-eight.vercel.app/',
+    image: 'https://api.microlink.io/?url=https://tienda-online-ashen-eight.vercel.app/&screenshot=true&meta=false&embed=screenshot.url',
     status: 'live',
   },
   {
@@ -56,11 +57,16 @@ const ProjectCard = memo(({ project }) => {
       <div className={styles.cardTop}>
         <span className={styles.badgeLive}>LIVE</span>
         {project.link && (
-          <a href={project.link} className={styles.externalLink}>
+          <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.externalLink}>
             <ExternalLinkIcon />
           </a>
         )}
       </div>
+      {project.image && (
+        <div className={styles.imageContainer}>
+          <img src={project.image} alt={project.title} className={styles.previewImage} />
+        </div>
+      )}
       <div>
         <h3 className={styles.cardTitle}>{project.title}</h3>
         <p className={styles.cardDesc}>{project.description}</p>
