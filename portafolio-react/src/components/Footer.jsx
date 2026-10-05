@@ -8,10 +8,10 @@ function Footer() {
       <section id="contacto" className={styles.contactSection}>
         <div className={styles.contactDivider} />
         <div className={styles.contactContainer}>
-          <p className={styles.label}>04 — Contacto</p>
-          <h2 className={styles.heading}>Hablemos</h2>
+          <p className={styles.label}>04 — Contact</p>
+          <h2 className={styles.heading}>Let's Talk</h2>
           <p className={styles.contactDesc}>
-            Estoy disponible para nuevas oportunidades, proyectos freelance o simplemente para conectar.
+            I'm available for new opportunities, freelance projects, or just to connect.
           </p>
           <div className={styles.contactLinks}>
             <a href="mailto:jeremiemadera05@gmail.com" className={styles.btnPrimary}>
@@ -29,7 +29,7 @@ function Footer() {
 
       {/* Footer */}
       <footer className={styles.footer}>
-        <p className={styles.footerText}>© 2026 Jeremie Madera — Desarrollador Back-End</p>
+        <p className={styles.footerText}>© 2026 Jeremie Madera — Back-End Developer</p>
       </footer>
     </>
   );

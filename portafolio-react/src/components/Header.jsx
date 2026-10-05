@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import styles from './Header.module.css';
 
 const NAV_LINKS = [
-  { label: 'Sobre Mí',    href: '#sobre-mi' },
-  { label: 'Proyectos',   href: '#proyectos' },
-  { label: 'Habilidades', href: '#habilidades' },
-  { label: 'Contacto',    href: '#contacto' },
+  { label: 'About',       href: '#sobre-mi' },
+  { label: 'Projects',    href: '#proyectos' },
+  { label: 'Skills',      href: '#habilidades' },
+  { label: 'Contact',     href: '#contacto' },
 ];
 
 function Header() {
@@ -47,7 +47,7 @@ function Header() {
         </ul>
 
         <a href="mailto:jeremiemadera05@gmail.com" className={styles.ctaBtn}>
-          Contáctame
+          Contact Me
         </a>
 
         <button className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)} aria-label="Menú">

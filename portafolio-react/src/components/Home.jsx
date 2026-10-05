@@ -13,15 +13,14 @@ function Home() {
 
           {/* Left */}
           <div className={styles.left}>
-            <p className={styles.greeting}>&gt; Hola, soy</p>
+            <p className={styles.greeting}>&gt; Hi, I am</p>
             <h1 className={styles.name}>
               Jeremie<br />
               <span className={styles.nameAccent}>Madera</span>
             </h1>
-            <p className={styles.role}>Desarrollador Back-End</p>
+            <p className={styles.role}>Back-End Developer</p>
             <p className={styles.bio}>
-              Especializado en C#, .NET, Java y SQL. Construyo soluciones escalables
-              y eficientes desde Puerto Rico.
+              Specializing in the C# and .NET ecosystem, with Full-Stack capabilities using TypeScript and React. Building scalable solutions from Puerto Rico.
             </p>
             <nav className={styles.ctas}>
               <a href="https://github.com/JeremieMadera" target="_blank" rel="noopener noreferrer" className={styles.btnPrimary}>
@@ -45,14 +44,14 @@ function Home() {
               <span className={styles.fileName}>jeremie.cs</span>
             </div>
             <div className={styles.codeBody}>
-              <p><span className={styles.cComment}>// Perfil de desarrollador</span></p>
+              <p><span className={styles.cComment}>// Developer profile</span></p>
               <p><span className={styles.cKeyword}>public class </span><span className={styles.cAccent}>Jeremie</span></p>
               <p className={styles.indent1}><span className={styles.cMuted}>: </span><span className={styles.cText}>Developer</span><span className={styles.cMuted}> {'{'}</span></p>
-              <p className={styles.indent2}><span className={styles.cKeyword}>string </span><span className={styles.cText}>Role </span><span className={styles.cMuted}>= </span><span className={styles.cString}>"Back-End"</span><span className={styles.cMuted}>;</span></p>
+              <p className={styles.indent2}><span className={styles.cKeyword}>string </span><span className={styles.cText}>Role </span><span className={styles.cMuted}>= </span><span className={styles.cString}>"Back-End & Full-Stack"</span><span className={styles.cMuted}>;</span></p>
               <p className={styles.indent2}><span className={styles.cKeyword}>string </span><span className={styles.cText}>Location </span><span className={styles.cMuted}>= </span><span className={styles.cString}>"Puerto Rico"</span><span className={styles.cMuted}>;</span></p>
               <p className={styles.indent2}><span className={styles.cKeyword}>string[] </span><span className={styles.cText}>Stack </span><span className={styles.cMuted}>= {'{'}</span></p>
               <p className={styles.indent4}><span className={styles.cString}>"C#"</span><span className={styles.cMuted}>, </span><span className={styles.cString}>".NET"</span><span className={styles.cMuted}>,</span></p>
-              <p className={styles.indent4}><span className={styles.cString}>"Java"</span><span className={styles.cMuted}>, </span><span className={styles.cString}>"SQL"</span></p>
+              <p className={styles.indent4}><span className={styles.cString}>"TypeScript"</span><span className={styles.cMuted}>, </span><span className={styles.cString}>"Node.js"</span></p>
               <p className={styles.indent2}><span className={styles.cMuted}>{'}'}</span><span className={styles.cMuted}>;</span></p>
               <p><span className={styles.cMuted}>{'}'}</span></p>
             </div>

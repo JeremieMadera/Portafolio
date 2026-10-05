@@ -6,8 +6,8 @@ const SKILLS = [
   { name: '.NET',       img: 'https://img.icons8.com/color/96/net-framework.png',        color: '#512bd4', category: 'Backend' },
   { name: 'Node.js',    img: 'https://img.icons8.com/color/96/nodejs.png',               color: '#339933', category: 'Backend' },
   { name: 'Express',    img: 'https://img.icons8.com/fluency/96/express-js.png',         color: '#808080', category: 'Backend' },
-  { name: 'PostgreSQL', img: 'https://img.icons8.com/color/96/postgreesql.png',          color: '#336791', category: 'Base de Datos' },
-  { name: 'SQL',        img: 'https://img.icons8.com/color/96/sql.png',                  color: '#336791', category: 'Base de Datos' },
+  { name: 'PostgreSQL', img: 'https://img.icons8.com/color/96/postgreesql.png',          color: '#336791', category: 'Databases' },
+  { name: 'SQL',        img: 'https://img.icons8.com/color/96/sql.png',                  color: '#336791', category: 'Databases' },
   { name: 'TypeScript', img: 'https://img.icons8.com/color/96/typescript.png',           color: '#3178c6', category: 'Frontend' },
   { name: 'React',      img: 'https://img.icons8.com/color/96/react-native.png',         color: '#61dafb', category: 'Frontend' },
   { name: 'JavaScript', img: 'https://img.icons8.com/color/96/javascript--v1.png',       color: '#f7df1e', category: 'Frontend' },
@@ -49,8 +49,8 @@ function Habilidades() {
       <div className={styles.divider} />
       <section id="habilidades" className={styles.section}>
         <div className={styles.container}>
-          <p className={styles.label}>03 — Habilidades</p>
-          <h2 className={styles.heading}>Stack tecnológico</h2>
+          <p className={styles.label}>03 — Skills</p>
+          <h2 className={styles.heading}>Tech Stack</h2>
           
           <div className={styles.categoryBlock}>
             <h3 className={styles.categoryTitle}>Back-End</h3>
@@ -62,9 +62,9 @@ function Habilidades() {
           </div>
 
           <div className={styles.categoryBlock}>
-            <h3 className={styles.categoryTitle}>Bases de Datos</h3>
+            <h3 className={styles.categoryTitle}>Databases</h3>
             <div className={styles.grid}>
-              {SKILLS.filter(s => s.category === 'Base de Datos').map((skill) => (
+              {SKILLS.filter(s => s.category === 'Databases').map((skill) => (
                 <SkillCard key={skill.name} skill={skill} />
               ))}
             </div>

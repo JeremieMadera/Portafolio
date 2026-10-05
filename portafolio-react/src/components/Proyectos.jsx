@@ -3,23 +3,23 @@ import styles from './Proyectos.module.css';
 
 const PROJECTS = [
   {
-    title: 'Tienda Online Full-Stack',
-    description: 'Aplicación web con pasarela de pagos segura, gestión de base de datos relacional y arquitectura escalable.',
+    title: 'Full-Stack Online Store',
+    description: 'Web application with secure payment gateway, relational database management, and scalable architecture.',
     tags: ['TypeScript', 'React', 'Node.js', 'Express', 'PostgreSQL', 'Stripe'],
     link: 'https://tienda-online-ashen-eight.vercel.app/',
     image: 'https://api.microlink.io/?url=https://tienda-online-ashen-eight.vercel.app/&screenshot=true&meta=false&embed=screenshot.url',
     status: 'live',
   },
   {
-    title: 'Próximamente',
-    description: 'Proyecto en desarrollo. Nuevas funcionalidades y tecnologías en camino.',
+    title: 'Coming Soon',
+    description: 'Project in development. New features and technologies on the way.',
     tags: [],
     link: null,
     status: 'soon',
   },
   {
-    title: 'Próximamente',
-    description: 'Proyecto en desarrollo. Nuevas funcionalidades y tecnologías en camino.',
+    title: 'Coming Soon',
+    description: 'Project in development. New features and technologies on the way.',
     tags: [],
     link: null,
     status: 'soon',
@@ -42,8 +42,8 @@ const ProjectCard = memo(({ project }) => {
   if (project.status === 'soon') {
     return (
       <div className={styles.cardSoon}>
-        <span className={styles.badgeSoon}>EN DESARROLLO</span>
-        <p className={styles.soonText}>Próximamente</p>
+        <span className={styles.badgeSoon}>IN DEVELOPMENT</span>
+        <p className={styles.soonText}>Coming Soon</p>
       </div>
     );
   }
@@ -90,8 +90,8 @@ function Proyectos() {
       <div className={styles.divider} />
       <section id="proyectos" className={styles.section}>
         <div className={styles.container}>
-          <p className={styles.label}>02 — Proyectos</p>
-          <h2 className={styles.heading}>Trabajo seleccionado</h2>
+          <p className={styles.label}>02 — Projects</p>
+          <h2 className={styles.heading}>Selected Work</h2>
           <div className={styles.grid}>
             {PROJECTS.map((project, i) => (
               <ProjectCard key={i} project={project} />
