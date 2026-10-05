@@ -100,3 +100,17 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+.categoryBlock {
+  margin-bottom: 3.5rem;
+}
+
+.categoryTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.75rem;
+}
